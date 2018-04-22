@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Video Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div class="player">
+     <video class="player__video viewer" src="https://r2---sn-hgn7rne7.googlevideo.com/videoplayback?ratebypass=yes&fvip=2&clen=8068830&signature=652DD80BD68E7A585CA2D652EC044D7DC8608E5C.537F4B8EE82516764C54226085B7A7C91D7C457C&source=youtube&fexp=23724337&lmt=1518498267614046&ipbits=0&gir=yes&requiressl=yes&itag=18&pl=18&dur=85.240&id=o-ANvjE9DI7sm4Wpru5PX7rRLc9isDs4TFAXRwz5VW2Jf9&mime=video%2Fmp4&sparams=clen,dur,ei,expire,gir,id,initcwndbps,ip,ipbits,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&ip=45.77.200.244&ei=SgPdWv2MNIv58gTt5YXoDw&key=cms1&c=WEB&expire=1524455338&title=asdfmovie3&title=asdfmovie3&mip=197.33.45.48&redirect_counter=1&cm2rm=sn-uxaxjvhxbt2u-icxe7k&req_id=dfb4b1626fd3a3ee&cms_redirect=yes&mm=29&mn=sn-hgn7rne7&ms=rdu&mt=1524433695&mv=m"></video>
+
+     <div class="player__controls">
+       <div class="progress">
+        <div class="progress__filled"></div>
+       </div>
+       <button class="player__button toggle" title="Toggle Play">►</button>
+       <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+       <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+       <button data-skip="-10" class="player__button">« 10s</button>
+       <button data-skip="25" class="player__button">25s »</button>
+     </div>
+   </div>
+
+  <script src="scripts.v2.js"></script>
+</body>
+</html>
